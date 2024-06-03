@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar.vue'
 import Hero from '../components/Hero.vue'
 import Vorteile from '../components/Vorteile.vue'
 import AboutUs from '../components/AboutUs.vue'
+import Service from '../components/Service.vue'
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import AboutUs from '../components/AboutUs.vue'
     <Hero />
     <Vorteile class="my-[120px] px-5 xl:px-0" />
     <AboutUs class="bg-[#f0f4fa] px-5 py-[120px] xl:px-0" />
+    <Service class="bg-[#0B2B36] px-5 py-[120px] xl:px-0" />
   </div>
 </template>
