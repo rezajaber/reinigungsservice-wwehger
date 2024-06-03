@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { Stars, ArrowRight, Droplets } from 'lucide-vue-next'
+import Button from './ui/button/Button.vue'
+import { Stars, ArrowRight } from 'lucide-vue-next'
 </script>
 
 <template>
   <div>
-    <div class="mx-auto lg:max-w-[1080px]">
+    <div class="mx-auto max-w-[1440px]">
       <!-- TITLE -->
-      <div class="flex justify-between">
+      <div class="needed-for-2/3/2">
         <div>
           <div class="flex gap-1.5">
             <Stars class="fill-button stroke-button w-5 animate-pulse" />
             <h6 class="text-header font-medium tracking-wide">LEISTUNGEN</h6>
           </div>
 
-          <div class="flex">
+          <div class="grid gap-5 md:flex md:gap-14">
             <h2 class="mt-2.5 text-6xl font-medium text-white">
               Elevate Your Space with Our Service
             </h2>
@@ -34,36 +35,84 @@ import { Stars, ArrowRight, Droplets } from 'lucide-vue-next'
       </div>
 
       <!-- GRID -->
-      <div class="mt-14 grid grid-cols-3 gap-6">
-        <div class="group relative overflow-hidden rounded-xl">
+      <div class="mt-14 flex flex-wrap justify-center gap-6">
+        <div class="grid place-items-center">
           <img
-            class="h-72 w-auto cursor-pointer rounded-xl object-cover"
+            class="h-72 rounded-xl object-cover"
             src="../assets/img/services/service-one.jpg"
             alt=""
           />
-
-          <div
-            class="absolute -bottom-[104px] bg-white px-12 pb-8 pt-4 duration-300 ease-in group-hover:-bottom-0"
+          <Button
+            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            >Winterdienst</Button
           >
-            <Droplets
-              class="droplets-icon bg-button hover:bg-header absolute -top-8 right-5 h-16 w-16 rounded-full p-3 duration-100 ease-in-out"
-            />
-            <p class="text-2xl font-medium">Plumbing Service</p>
-            <p class="mt-10 opacity-80">
-              Duis aute irure dolor in repreh ation ullamco laboris nisi
-            </p>
-          </div>
         </div>
-        <img
-          class="h-full rounded-xl object-cover"
-          src="../assets/img/services/service-two.jpg"
-          alt=""
-        />
-        <img
-          class="h-full rounded-xl object-cover"
-          src="../assets/img/services/service-three.jpg"
-          alt=""
-        />
+        <div class="grid place-items-center">
+          <img
+            class="h-72 rounded-xl object-cover"
+            src="../assets/img/services/service-two.jpg"
+            alt=""
+          />
+          <Button
+            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            >Wohnungsauflösung</Button
+          >
+        </div>
+        <div class="grid place-items-center">
+          <img
+            class="h-72 rounded-xl object-cover"
+            src="../assets/img/services/service-three.jpg"
+            alt=""
+          />
+          <Button
+            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            >Entrümplung</Button
+          >
+        </div>
+        <div class="grid place-items-center">
+          <img
+            class="h-72 rounded-xl object-cover"
+            src="../assets/img/services/service-four.jpg"
+            alt=""
+          />
+          <Button
+            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            >Hausmeisterservice</Button
+          >
+        </div>
+        <div class="grid place-items-center">
+          <img
+            class="h-72 rounded-xl object-cover"
+            src="../assets/img/services/service-five.jpg"
+            alt=""
+          />
+          <Button
+            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            >Gartenarbeiten</Button
+          >
+        </div>
+        <div class="grid place-items-center">
+          <img
+            class="h-72 rounded-xl object-cover"
+            src="../assets/img/services/service-six.jpg"
+            alt=""
+          />
+          <Button
+            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            >Entsorgung</Button
+          >
+        </div>
+        <div class="grid place-items-center">
+          <img
+            class="h-72 rounded-xl object-cover"
+            src="../assets/img/services/service-six.jpg"
+            alt=""
+          />
+          <Button
+            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            >Reinigung</Button
+          >
+        </div>
       </div>
     </div>
   </div>
