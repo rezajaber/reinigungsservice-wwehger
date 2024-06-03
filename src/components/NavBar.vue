@@ -7,7 +7,7 @@ import { UserRound } from 'lucide-vue-next'
 <template>
   <div>
     <div
-      class="navbar-shadow mx-auto flex max-w-[1080px] items-center justify-between rounded-xl bg-white px-5 py-4 shadow-lg"
+      class="navbar-shadow mx-auto flex h-[88px] max-w-[1080px] items-center justify-between rounded-xl bg-white px-5 py-4 shadow-lg"
     >
       <img class="h-10 w-auto" src="../assets/img/logo.png" alt="Logo-WWEHGER" />
 
@@ -38,10 +38,10 @@ li {
 li::after {
   content: '';
   position: absolute;
-  bottom: -23px; /* Adjust according to the desired distance from the text */
+  bottom: -31px; /* Adjust according to the desired distance from the text */
   left: 0;
   width: 0;
-  height: 2px; /* Adjust according to the desired thickness of the underline */
+  height: 3px; /* Adjust according to the desired thickness of the underline */
   background-color: #2bba80; /* Use the text color */
   transition: width 0.3s ease-in-out;
 }
