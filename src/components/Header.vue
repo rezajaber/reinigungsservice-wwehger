@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
   <div>
     <div class="mx-auto flex max-w-[1080px] items-start justify-between">
       <!-- HEADER TABLET & ABOVE -->
-      <div class="mt-2 flex items-center gap-4">
+      <div class="mt-2.5 flex items-center gap-4">
         <div class="flex items-center gap-2 text-white">
           <Phone class="w-5 fill-white stroke-none" />
           <span>+123 456 7890</span>
@@ -27,7 +27,7 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
         </div>
       </div>
 
-      <div class="mt-2 flex items-center gap-5">
+      <div class="mt-2.5 flex items-center gap-5">
         <Instagram class="stroke-header w-6 fill-white" />
         <Facebook class="w-5 fill-white stroke-white" />
         <Linkedin class="w-5 fill-white stroke-white" />
