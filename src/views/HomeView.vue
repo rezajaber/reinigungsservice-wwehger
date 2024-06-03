@@ -6,8 +6,8 @@ import Hero from '../components/Hero.vue'
 
 <template>
   <div>
-    <Header class="bg-header h-[88px]" />
-    <NavBar class="fixed inset-x-0 z-10 -mt-[45px]" />
+    <Header class="bg-header h-[88px] px-5 xl:px-0" />
+    <NavBar class="xl-0 fixed inset-x-0 z-10 -mt-[45px] px-5" />
     <Hero />
   </div>
 </template>
