@@ -21,6 +21,10 @@ module.exports = {
         '2xl': '1400px'
       }
     },
+    fontFamily: {
+      title: ['Poppins', 'sans-serif'],
+      display: ['Roboto', 'sans-serif']
+    },
     extend: {
       colors: {
         button: '#fedb5d',
