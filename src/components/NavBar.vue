@@ -1,24 +1,65 @@
 <script setup lang="ts">
 import Button from './ui/button/Button.vue'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger
+} from '@/components/ui/dialog'
 
-import { UserRound } from 'lucide-vue-next'
+import { UserRound, Menu, Mail, Phone } from 'lucide-vue-next'
 </script>
 
 <template>
   <div>
     <div
-      class="navbar-shadow mx-auto flex h-[88px] max-w-[1080px] items-center justify-between rounded-xl bg-white px-5 py-4 shadow-lg"
+      class="navbar-shadow mx-auto flex h-[80px] max-w-[1080px] items-center justify-between rounded-xl bg-white px-5 py-4 shadow-lg md:h-[88px]"
     >
-      <img class="h-10 w-auto" src="../assets/img/logo.png" alt="Logo-WWEHGER" />
+      <img class="h-8 w-auto md:h-10" src="../assets/img/logo.png" alt="Logo-WWEHGER" />
 
-      <ul class="flex cursor-pointer gap-11 font-medium">
+      <!-- MD AND ABOVE -->
+      <ul class="hidden cursor-pointer gap-11 font-medium md:flex">
         <li>Home</li>
         <li>Vorteile</li>
         <li>Über Uns</li>
         <li>Leistungen</li>
       </ul>
 
-      <Button><UserRound class="mr-1.5 w-5" />Kontakt</Button>
+      <Button class="bg-button hidden rounded-full text-black md:flex"
+        ><UserRound class="mr-1.5 w-5" />Kontakt</Button
+      >
+
+      <!-- MOBILE MENU -->
+      <div class="flex md:hidden">
+        <Dialog>
+          <DialogTrigger as-child>
+            <Menu class="cursor-pointer" />
+          </DialogTrigger>
+
+          <DialogContent class="max-w-xs rounded-lg md:max-w-md">
+            <DialogHeader>
+              <DialogTitle>Wir helfen Ihnen gerne!</DialogTitle>
+              <DialogDescription> Hier finden sie uns schnell und einfach. </DialogDescription>
+            </DialogHeader>
+
+            <div class="grid gap-2.5">
+              <div class="grid gap-2">
+                <Button class="rounded-xl">Home</Button>
+                <Button class="rounded-xl">Vorteile</Button>
+                <Button class="rounded-xl">Über Uns</Button>
+                <Button class="rounded-xl">Leistungen</Button>
+              </div>
+
+              <div class="flex gap-2">
+                <Button class="w-full rounded-xl"><Mail class="mr-1.5 w-5" />Kontakt</Button>
+                <Button class="w-full rounded-xl"><Phone class="mr-1.5 w-5" />Mail</Button>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
+      </div>
     </div>
   </div>
 </template>
