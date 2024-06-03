@@ -8,8 +8,8 @@ import Vorteile from '../components/Vorteile.vue'
 <template>
   <div>
     <Header class="bg-header h-[88px] px-5 xl:px-0" />
-    <NavBar class="xl-0 fixed inset-x-0 z-10 -mt-[45px] px-5" />
+    <NavBar class="fixed inset-x-0 z-10 -mt-[45px] px-5 xl:px-0" />
     <Hero />
-    <Vorteile class="my-[120px]" />
+    <Vorteile class="my-[120px] px-5 xl:px-0" />
   </div>
 </template>
