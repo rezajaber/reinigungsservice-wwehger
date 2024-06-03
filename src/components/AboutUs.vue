@@ -5,7 +5,7 @@ import { Stars, BadgeCheck, Phone } from 'lucide-vue-next'
 
 <template>
   <div>
-    <div class="mx-auto grid max-w-[1080px] justify-between gap-16 lg:flex">
+    <div class="mx-auto grid max-w-[1280px] justify-between gap-16 lg:flex">
       <div class="lg:w-1/2">
         <img class="h-full rounded-xl object-cover" src="../assets/img/about-card-3.jpeg" alt="" />
       </div>
