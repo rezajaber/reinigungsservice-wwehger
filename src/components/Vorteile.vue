@@ -9,7 +9,7 @@ import { Stars, BriefcaseBusiness, Users, BadgeEuro } from 'lucide-vue-next'
       class="stroke-button fill-button absolute left-10 top-0 z-[-1] h-auto w-14 animate-bounce opacity-80"
     />
 
-    <div class="">
+    <div>
       <div class="flex items-center justify-center gap-1.5">
         <Stars class="fill-button stroke-button w-5 animate-pulse" />
         <h6 class="text-header font-medium tracking-wide">PROFESSIONAL SERVICE</h6>
