@@ -6,6 +6,7 @@ import Vorteile from '../components/Vorteile.vue'
 import AboutUs from '../components/AboutUs.vue'
 import Service from '../components/Service.vue'
 import Process from '../components/Process.vue'
+
 import Footer from '../components/Footer.vue'
 
 import darkWallImage from '../assets/img/dark-wall.png'
@@ -14,7 +15,7 @@ import WallImage from '../assets/img/wall.jpeg'
 
 <template>
   <div>
-    <Header class="bg-header h-[88px] px-5 2xl:px-0" />
+    <Header class="h-[88px] bg-header px-5 2xl:px-0" />
     <NavBar class="fixed inset-x-0 z-50 -mt-[45px] px-5 2xl:px-0" />
     <Hero />
     <Vorteile class="my-[120px] px-5 2xl:px-0" />
