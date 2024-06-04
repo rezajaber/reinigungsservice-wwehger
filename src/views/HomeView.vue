@@ -6,6 +6,7 @@ import Vorteile from '../components/Vorteile.vue'
 import AboutUs from '../components/AboutUs.vue'
 import Service from '../components/Service.vue'
 import Process from '../components/Process.vue'
+import Footer from '../components/Footer.vue'
 
 import darkWallImage from '../assets/img/dark-wall.png'
 import WallImage from '../assets/img/wall.jpeg'
@@ -16,7 +17,7 @@ import WallImage from '../assets/img/wall.jpeg'
     <Header class="bg-header h-[88px] px-5 2xl:px-0" />
     <NavBar class="fixed inset-x-0 z-50 -mt-[45px] px-5 2xl:px-0" />
     <Hero />
-    <Vorteile class="my-[120px] px-5 xl:px-0" />
+    <Vorteile class="my-[120px] px-5 2xl:px-0" />
     <AboutUs class="bg-[#f0f4fa] px-5 py-[120px] 2xl:px-0" />
     <Service
       :style="{ backgroundImage: `url(${darkWallImage})` }"
@@ -26,5 +27,6 @@ import WallImage from '../assets/img/wall.jpeg'
       :style="{ backgroundImage: `url(${WallImage})` }"
       class="bg-cover bg-center px-5 py-[120px] 2xl:px-0"
     />
+    <Footer class="bg-[#0F2E38] px-5 py-[60px] 2xl:px-0" />
   </div>
 </template>
