@@ -6,7 +6,7 @@ import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
   <div>
     <div class="container mx-auto max-w-[1280px] p-6">
       <div
-        class="grid place-items-center gap-4 rounded-xl bg-header px-20 py-10 lg:flex lg:justify-between lg:py-16"
+        class="background-picture grid place-items-center gap-4 rounded-xl px-20 py-10 lg:flex lg:justify-between lg:py-16"
       >
         <div class="text-center lg:text-start">
           <h3 class="mb-3 text-4xl font-medium text-white lg:text-5xl">Call for A Free Quote</h3>
@@ -14,7 +14,6 @@ import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
             >Exteur sint occaecat cupidatat non proident</span
           >
         </div>
-
         <div class="right-0 mt-4 flex items-center gap-4">
           <Phone
             class="h-16 w-16 cursor-pointer rounded-full border-2 border-button bg-button fill-black stroke-none p-3.5 duration-300 ease-in-out"
@@ -88,3 +87,12 @@ import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
     </div>
   </div>
 </template>
+
+<style scoped>
+.background-picture {
+  background-image: url('../assets/img/contact-us.png');
+  /* You might want to adjust these properties based on your image and layout */
+  background-size: cover;
+  background-position: center;
+}
+</style>
