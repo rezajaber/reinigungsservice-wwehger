@@ -10,6 +10,19 @@ import {
 } from '@/components/ui/dialog'
 
 import { UserRound, Menu, Mail, Phone } from 'lucide-vue-next'
+
+const scrollTo = (id: string) => {
+  const element = document.getElementById(id)
+  if (element) {
+    const offset = -50
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY
+    const offsetPosition = elementPosition + offset
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+}
 </script>
 
 <template>
@@ -17,17 +30,22 @@ import { UserRound, Menu, Mail, Phone } from 'lucide-vue-next'
     <div
       class="navbar-shadow mx-auto flex h-[80px] max-w-[1080px] items-center justify-between rounded-xl bg-white px-5 py-4 shadow-lg md:h-[88px]"
     >
-      <img class="h-8 w-auto md:h-10" src="../assets/img/logo.png" alt="Logo-WWEHGER" />
+      <img
+        @click="scrollTo('header')"
+        class="h-8 w-auto cursor-pointer duration-100 ease-in hover:scale-105 md:h-10"
+        src="../assets/img/logo.png"
+        alt="Logo-WWEHGER"
+      />
 
       <!-- MD AND ABOVE -->
       <ul class="hidden cursor-pointer gap-11 font-medium md:flex">
-        <li>Home</li>
-        <li>Vorteile</li>
-        <li>Über Uns</li>
-        <li>Leistungen</li>
+        <li @click="scrollTo('service')">Service</li>
+        <li @click="scrollTo('aboutus')">Über uns</li>
+        <li @click="scrollTo('leistungen')">Leistungen</li>
+        <li @click="scrollTo('process')">Prozess</li>
       </ul>
 
-      <Button class="hidden rounded-full bg-button text-black md:flex"
+      <Button @click="scrollTo('contact')" class="hidden rounded-full bg-button text-black md:flex"
         ><UserRound class="mr-1.5 w-5" />Kontakt</Button
       >
 
@@ -46,10 +64,10 @@ import { UserRound, Menu, Mail, Phone } from 'lucide-vue-next'
 
             <div class="grid gap-2.5">
               <div class="grid gap-2">
-                <Button class="rounded-xl">Home</Button>
-                <Button class="rounded-xl">Vorteile</Button>
-                <Button class="rounded-xl">Über Uns</Button>
-                <Button class="rounded-xl">Leistungen</Button>
+                <Button class="rounded-xl" @click="scrollTo('hero')">Home</Button>
+                <Button class="rounded-xl" @click="scrollTo('service')">Service</Button>
+                <Button class="rounded-xl" @click="scrollTo('aboutus')">Über Uns</Button>
+                <Button class="rounded-xl" @click="scrollTo('leistungen')">Leistungen</Button>
               </div>
 
               <div class="flex gap-2">
