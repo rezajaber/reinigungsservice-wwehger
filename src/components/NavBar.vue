@@ -27,7 +27,7 @@ import { UserRound, Menu, Mail, Phone } from 'lucide-vue-next'
         <li>Leistungen</li>
       </ul>
 
-      <Button class="bg-button hidden rounded-full text-black md:flex"
+      <Button class="hidden rounded-full bg-button text-black md:flex"
         ><UserRound class="mr-1.5 w-5" />Kontakt</Button
       >
 
