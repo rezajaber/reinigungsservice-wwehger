@@ -47,7 +47,7 @@ import { Stars, BadgeCheck, Phone } from 'lucide-vue-next'
 
           <div class="flex items-center gap-4">
             <Phone
-              class="fill-header border-button h-autp hover:bg-button h-14 w-14 cursor-pointer rounded-full border stroke-none p-3.5 duration-300 ease-in-out hover:fill-black"
+              class="fill-header border-button h-autp hover:bg-button h-14 w-14 cursor-pointer rounded-full border-2 stroke-none p-3.5 duration-300 ease-in-out hover:fill-black"
             />
             <div class="grid">
               <span class="text-lg opacity-60">Call Us</span>
