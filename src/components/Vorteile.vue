@@ -6,7 +6,7 @@ import { Stars, BriefcaseBusiness, Users, BadgeEuro } from 'lucide-vue-next'
   <div class="relative mx-auto max-w-[1440px]">
     <!-- Stars placed in the background -->
     <Stars
-      class="absolute left-10 top-0 z-[-1] h-auto w-8 animate-bounce fill-button stroke-button opacity-80 md:w-14"
+      class="absolute left-10 top-20 z-[-1] h-auto w-8 animate-bounce fill-button stroke-button opacity-80 md:w-14"
     />
 
     <div>
