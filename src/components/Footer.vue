@@ -14,13 +14,13 @@ import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
             >Exteur sint occaecat cupidatat non proident</span
           >
         </div>
-        <div class="right-0 mt-4 flex items-center gap-4">
+        <div class="right-0 mt-4 grid place-items-center gap-4 lg:flex lg:items-center">
           <Phone
             class="h-16 w-16 cursor-pointer rounded-full border-2 border-button bg-button fill-black stroke-none p-3.5 duration-300 ease-in-out"
           />
           <div class="grid">
-            <span class="text-xl text-white opacity-80">Call Us Now</span>
-            <span class="text-xl font-medium text-white lg:text-2xl 2xl:text-4xl"
+            <span class="text-center text-xl text-white opacity-80 lg:text-start">Call Us Now</span>
+            <span class="text-sm font-medium text-white sm:text-xl lg:text-2xl 2xl:text-4xl"
               >+123-456-7890</span
             >
           </div>
