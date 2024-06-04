@@ -6,13 +6,13 @@ import { Stars, BriefcaseBusiness, Users, BadgeEuro } from 'lucide-vue-next'
   <div class="relative mx-auto max-w-[1440px]">
     <!-- Stars placed in the background -->
     <Stars
-      class="stroke-button fill-button absolute left-10 top-0 z-[-1] h-auto w-14 animate-bounce opacity-80"
+      class="absolute left-10 top-0 z-[-1] h-auto w-8 animate-bounce fill-button stroke-button opacity-80 md:w-14"
     />
 
     <div>
       <div class="flex items-center justify-center gap-1.5">
-        <Stars class="fill-button stroke-button w-5 animate-pulse" />
-        <h6 class="text-header font-medium tracking-wide">PROFESSIONAL SERVICE</h6>
+        <Stars class="w-5 animate-pulse fill-button stroke-button" />
+        <h6 class="font-medium tracking-wide text-header">PROFESSIONAL SERVICE</h6>
       </div>
 
       <h3 class="mt-1 text-center text-5xl sm:text-6xl">Cleaning Service at <br />Your Door</h3>
@@ -24,7 +24,7 @@ import { Stars, BriefcaseBusiness, Users, BadgeEuro } from 'lucide-vue-next'
         :key="i"
         class="card-shadow relative z-10 w-80 rounded-lg px-10 py-16 duration-500 ease-in-out hover:-translate-y-2 hover:scale-105"
       >
-        <BriefcaseBusiness class="stroke-header h-auto w-14" />
+        <BriefcaseBusiness class="h-auto w-14 stroke-header" />
         <p class="mt-7 text-2xl font-medium">Quality Service</p>
         <p class="mt-6 text-lg opacity-80">
           Kobita amco laboris nisid ut aliquip ex ea com moido consequat. Duis aute irure dolor in
