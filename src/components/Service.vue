@@ -5,13 +5,13 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
 
 <template>
   <div>
-    <div class="mx-auto max-w-[1440px]">
+    <div class="mx-auto max-w-[1280px]">
       <!-- TITLE -->
       <div class="needed-for-2/3/2">
         <div>
           <div class="flex gap-1.5">
-            <Stars class="fill-button stroke-button w-5 animate-pulse" />
-            <h6 class="text-header font-medium tracking-wide">LEISTUNGEN</h6>
+            <Stars class="w-5 animate-pulse fill-button stroke-button" />
+            <h6 class="font-medium tracking-wide text-header">LEISTUNGEN</h6>
           </div>
 
           <div class="grid gap-5 md:flex md:gap-14">
@@ -20,7 +20,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
             </h2>
 
             <div>
-              <p class="text-sub mb-4 text-xl">
+              <p class="mb-4 text-xl text-sub">
                 Exteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum.
               </p>
@@ -38,78 +38,78 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
       <div class="mt-14 flex flex-wrap justify-center gap-6">
         <div class="grid place-items-center">
           <img
-            class="h-72 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover"
             src="../assets/img/services/service-one.jpg"
             alt=""
           />
           <Button
-            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
             >Winterdienst</Button
           >
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-72 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover"
             src="../assets/img/services/service-two.jpg"
             alt=""
           />
           <Button
-            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
             >Wohnungsauflösung</Button
           >
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-72 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover"
             src="../assets/img/services/service-three.jpg"
             alt=""
           />
           <Button
-            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
             >Entrümplung</Button
           >
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-72 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover"
             src="../assets/img/services/service-four.jpg"
             alt=""
           />
           <Button
-            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
             >Hausmeisterservice</Button
           >
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-72 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover"
             src="../assets/img/services/service-five.jpg"
             alt=""
           />
           <Button
-            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
             >Gartenarbeiten</Button
           >
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-72 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover"
             src="../assets/img/services/service-six.jpg"
             alt=""
           />
           <Button
-            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
             >Entsorgung</Button
           >
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-72 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover"
             src="../assets/img/services/service-six.jpg"
             alt=""
           />
           <Button
-            class="hover:bg-header z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium"
+            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
             >Reinigung</Button
           >
         </div>
