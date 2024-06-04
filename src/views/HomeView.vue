@@ -5,6 +5,10 @@ import Hero from '../components/Hero.vue'
 import Vorteile from '../components/Vorteile.vue'
 import AboutUs from '../components/AboutUs.vue'
 import Service from '../components/Service.vue'
+import Process from '../components/Process.vue'
+
+import darkWallImage from '../assets/img/dark-wall.png'
+import WallImage from '../assets/img/wall.jpeg'
 </script>
 
 <template>
@@ -14,6 +18,13 @@ import Service from '../components/Service.vue'
     <Hero />
     <Vorteile class="my-[120px] px-5 xl:px-0" />
     <AboutUs class="bg-[#f0f4fa] px-5 py-[120px] 2xl:px-0" />
-    <Service class="bg-[#0B2B36] px-5 py-[120px] 2xl:px-0" />
+    <Service
+      :style="{ backgroundImage: `url(${darkWallImage})` }"
+      class="bg-cover bg-center px-5 py-[120px] 2xl:px-0"
+    />
+    <Process
+      :style="{ backgroundImage: `url(${WallImage})` }"
+      class="bg-cover bg-center px-5 py-[120px] 2xl:px-0"
+    />
   </div>
 </template>
