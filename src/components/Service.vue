@@ -38,7 +38,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
       <div class="mt-14 flex flex-wrap justify-center gap-6">
         <div class="grid place-items-center">
           <img
-            class="h-64 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
             src="../assets/img/services/service-one.jpg"
             alt=""
           />
@@ -49,7 +49,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-64 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
             src="../assets/img/services/service-two.jpg"
             alt=""
           />
@@ -60,7 +60,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-64 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
             src="../assets/img/services/service-three.jpg"
             alt=""
           />
@@ -71,7 +71,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-64 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
             src="../assets/img/services/service-four.jpg"
             alt=""
           />
@@ -82,7 +82,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-64 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
             src="../assets/img/services/service-five.jpg"
             alt=""
           />
@@ -93,7 +93,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-64 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
             src="../assets/img/services/service-six.jpg"
             alt=""
           />
@@ -104,7 +104,7 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
         </div>
         <div class="grid place-items-center">
           <img
-            class="h-64 rounded-xl object-cover"
+            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
             src="../assets/img/services/service-six.jpg"
             alt=""
           />
