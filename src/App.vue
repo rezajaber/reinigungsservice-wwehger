@@ -3,20 +3,19 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <Transition>
+  <Transition name="fade">
     <RouterView />
   </Transition>
 </template>
 
 <style scoped>
-/* we will explain what these classes do next! */
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 1s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
 
-.v-enter-from,
-.v-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
