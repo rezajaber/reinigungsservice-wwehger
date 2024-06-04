@@ -13,8 +13,8 @@ import { Stars, BadgeCheck, Phone } from 'lucide-vue-next'
       <!-- RIGHT SIDE -->
       <div class="lg:w-1/2">
         <div class="flex gap-1.5">
-          <Stars class="fill-button stroke-button w-5 animate-pulse" />
-          <h6 class="text-header font-medium tracking-wide">ABOUT US</h6>
+          <Stars class="w-5 animate-pulse fill-button stroke-button" />
+          <h6 class="font-medium tracking-wide text-header">ABOUT US</h6>
         </div>
 
         <h3 class="mt-2 text-5xl sm:text-6xl">We Make Places <br />Clean & Bright</h3>
@@ -25,29 +25,29 @@ import { Stars, BadgeCheck, Phone } from 'lucide-vue-next'
 
         <ul class="mt-4 grid gap-2">
           <li class="flex items-center gap-2 text-lg opacity-90">
-            <BadgeCheck class="fill-header w-6 stroke-[#f0f4fa]" />
+            <BadgeCheck class="w-6 fill-header stroke-[#f0f4fa]" />
             Ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </li>
 
           <li class="flex items-center gap-2 text-lg opacity-90">
-            <BadgeCheck class="fill-header w-6 stroke-[#f0f4fa]" />
+            <BadgeCheck class="w-6 fill-header stroke-[#f0f4fa]" />
             Duis aute irure dolor in reprehenderit in voluptate
           </li>
 
           <li class="flex items-center gap-2 text-lg opacity-90">
-            <BadgeCheck class="fill-header w-6 stroke-[#f0f4fa]" />
+            <BadgeCheck class="w-6 fill-header stroke-[#f0f4fa]" />
             Excepteur sint occaecat cupidatat non proiden ulpa qui
           </li>
         </ul>
 
-        <div class="mt-8 flex items-center gap-4">
-          <Button class="bg-button hover:bg-button/80 h-14 rounded-full px-12 text-black"
+        <div class="mt-8 grid items-center gap-4 sm:flex">
+          <Button class="h-14 rounded-full bg-button px-12 text-black hover:bg-button/80"
             >Our Services</Button
           >
 
           <div class="flex items-center gap-4">
             <Phone
-              class="fill-header border-button h-autp hover:bg-button h-14 w-14 cursor-pointer rounded-full border-2 stroke-none p-3.5 duration-300 ease-in-out hover:fill-black"
+              class="h-autp h-14 w-14 cursor-pointer rounded-full border-2 border-button fill-header stroke-none p-3.5 duration-300 ease-in-out hover:bg-button hover:fill-black"
             />
             <div class="grid">
               <span class="text-lg opacity-60">Call Us</span>
