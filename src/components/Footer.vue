@@ -1,41 +1,63 @@
 <script setup lang="ts">
 import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
+
+const scrollTo = (id: string) => {
+  const element = document.getElementById(id)
+  if (element) {
+    const offset = -50
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY
+    const offsetPosition = elementPosition + offset
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+}
 </script>
 
 <template>
   <div>
     <div class="container mx-auto max-w-[1280px] p-6">
       <div
-        class="background-picture grid place-items-center gap-4 rounded-xl px-20 py-10 lg:flex lg:justify-between lg:py-16"
+        class="background-picture grid place-content-center place-items-center gap-4 rounded-xl px-20 py-10 lg:flex lg:justify-between lg:py-16"
       >
         <div class="text-center lg:text-start">
-          <h3 class="mb-3 text-4xl font-medium text-white lg:text-5xl">Call for A Free Quote</h3>
+          <h3 class="mb-3 text-4xl font-medium text-white lg:text-5xl">Kontaktieren Sie Uns</h3>
           <span class="text-lg text-white lg:text-xl"
-            >Exteur sint occaecat cupidatat non proident</span
+            >Rufen Sie uns an und bekommen ein kostenloses Angebot!</span
           >
         </div>
         <div class="right-0 mt-4 grid place-items-center gap-4 lg:flex lg:items-center">
           <Phone
             class="h-16 w-16 cursor-pointer rounded-full border-2 border-button bg-button fill-black stroke-none p-3.5 duration-300 ease-in-out"
           />
-          <div class="grid">
-            <span class="text-center text-xl text-white opacity-80 lg:text-start">Call Us Now</span>
-            <span class="text-sm font-medium text-white sm:text-xl lg:text-2xl 2xl:text-4xl"
-              >+123-456-7890</span
-            >
-          </div>
+          <a href="tel:+49 178 1797307">
+            <div class="grid">
+              <span class="text-center text-xl text-white opacity-80 lg:text-start"
+                >Unser Kontakt</span
+              >
+              <span
+                class="text-center text-sm font-medium text-white sm:text-xl lg:text-2xl 2xl:text-4xl"
+                >+49 178 1797307</span
+              >
+            </div>
+          </a>
         </div>
       </div>
 
       <div class="mt-20 lg:flex">
         <div class="-mx-6 w-full lg:w-2/5">
           <div class="px-6">
-            <a href="#">
-              <img class="h-10 w-auto invert" src="../assets/img/logo.png" alt="" />
-            </a>
+            <span @click="scrollTo('header')" class="cursor-pointer">
+              <img
+                class="h-10 w-auto invert duration-100 ease-in hover:scale-105"
+                src="../assets/img/logo.png"
+                alt=""
+              />
+            </span>
 
             <p class="mt-4 max-w-sm text-sub">
-              Join 31,000+ other and never miss out on new tips, tutorials, and more.
+              Willkommen bei WWEHGER, hier finden Sie <br />"PERFEKTION IN JEDER DIENSTLEISTUNG"
             </p>
 
             <div class="mt-4 flex gap-5">
@@ -50,30 +72,134 @@ import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
         <div class="mt-6 lg:mt-0 lg:flex-1">
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div>
-              <h3 class="uppercase text-white">About</h3>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Company</a>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">community</a>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Careers</a>
+              <h3
+                @click="scrollTo('service')"
+                class="cursor-pointer uppercase text-white hover:underline"
+              >
+                Service
+              </h3>
+              <span
+                @click="scrollTo('service')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Qualitätsservice</span
+              >
+              <span
+                @click="scrollTo('service')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Professionalität</span
+              >
+              <span
+                @click="scrollTo('service')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Preisgestaltung</span
+              >
+              <span
+                @click="scrollTo('service')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Zufriedenheit</span
+              >
             </div>
 
             <div>
-              <h3 class="uppercase text-white">Blog</h3>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Tec</a>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Music</a>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Videos</a>
+              <h3
+                @click="scrollTo('leistungen')"
+                class="cursor-pointer uppercase text-white hover:underline"
+              >
+                Leistungen
+              </h3>
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Winterdienst</span
+              >
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Wohnungsauflösung</span
+              >
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Entrümplung</span
+              >
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Entrümplung</span
+              >
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Hausmeisterservice</span
+              >
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Gartenarbeiten</span
+              >
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Entsorgung</span
+              >
+              <span
+                @click="scrollTo('leistungen')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Reinigung</span
+              >
             </div>
 
             <div>
-              <h3 class="uppercase text-white">Products</h3>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Mega cloud</a>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Aperion UI</a>
-              <a href="#" class="mt-2 block text-sm text-sub hover:underline">Meraki UI</a>
+              <h3
+                @click="scrollTo('process')"
+                class="cursor-pointer uppercase text-white hover:underline"
+              >
+                Prozess
+              </h3>
+              <span
+                @click="scrollTo('process')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Service wählen</span
+              >
+              <span
+                @click="scrollTo('process')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Team kommt</span
+              >
+              <span
+                @click="scrollTo('process')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Prozessstart</span
+              >
+              <span
+                @click="scrollTo('process')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Zufriedenheit</span
+              >
             </div>
 
             <div>
-              <h3 class="uppercase text-white">Contact</h3>
-              <span class="mt-2 block text-sm text-sub hover:underline">+1 526 654 8965</span>
-              <span class="mt-2 block text-sm text-sub hover:underline">example@email.com</span>
+              <h3
+                @click="scrollTo('aboutus')"
+                class="cursor-pointer uppercase text-white hover:underline"
+              >
+                Über uns
+              </h3>
+              <span
+                @click="scrollTo('aboutus')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Sektion</span
+              >
+              <span
+                @click="scrollTo('aboutus')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Impressum</span
+              >
+              <span
+                @click="scrollTo('aboutus')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Datenschutz</span
+              >
             </div>
           </div>
         </div>
