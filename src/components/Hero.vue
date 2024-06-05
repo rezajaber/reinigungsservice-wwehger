@@ -12,13 +12,14 @@
 
     <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white">
       <div class="grid md:gap-5">
-        <h3 class="mb-2 font-semibold sm:text-lg md:text-xl">YOUR HOME, YOUR HEAVEN</h3>
+        <h3 class="mb-2 font-semibold sm:text-lg md:text-xl">IHR ZUHAUSE, IHR PARADIES</h3>
         <h1 class="mb-4 text-4xl font-semibold sm:text-6xl xl:text-7xl">
-          CLEAN YOUR WAY TO <br />YOUR HAPPINESS
+          PERFEKTION IN <br />JEDER DIENSTLEISTUNG
         </h1>
         <h6 class="sm:text-md text-sm md:text-lg">
-          Classical Latin literature from enter, making it over kusta years old. Richard McClintock
-          <br class="hidden lg:block" />a Latin professor at hampden sydney College in Virginia
+          Wir sind im Dienst – mit Hingabe und Sorgfalt. Unser Team sorgt für Sauberkeit und
+          Zufriedenheit.
+          <br class="hidden lg:block" />Vertrauen Sie auf unsere Expertise und Leidenschaft.
         </h6>
       </div>
     </div>
