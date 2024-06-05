@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Credentials from './Credentials.vue'
 import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
 
 const scrollTo = (id: string) => {
@@ -204,16 +205,9 @@ const scrollTo = (id: string) => {
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
                 >Sektion</span
               >
-              <span
-                @click="scrollTo('aboutus')"
-                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Impressum</span
-              >
-              <span
-                @click="scrollTo('aboutus')"
-                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Datenschutz</span
-              >
+              <span class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                ><Credentials
+              /></span>
             </div>
           </div>
         </div>
