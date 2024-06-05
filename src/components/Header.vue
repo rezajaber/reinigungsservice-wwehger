@@ -10,7 +10,7 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
         <a href="tel:+49 178 1797307">
           <div class="flex items-center gap-2 text-white duration-300 hover:scale-105">
             <Phone class="w-5 fill-white stroke-none" />
-            <span class="hidden md:block">+49 178 1797307</span>
+            <span class="hidden text-sm md:block lg:text-base">+49 178 1797307</span>
           </div>
         </a>
 
@@ -18,7 +18,7 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
         <a href="mailto:bljerim.zaiti@web.de" target="_blank">
           <div class="flex items-center gap-2 text-white duration-300 hover:scale-105">
             <Mail class="w-5 fill-white stroke-header" />
-            <span class="hidden md:block">bljerim.zaiti@web.de</span>
+            <span class="hidden text-sm md:block lg:text-base">bljerim.zaiti@web.de</span>
           </div>
         </a>
 
@@ -30,13 +30,13 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
         >
           <div class="flex items-center gap-2 text-white duration-300 hover:scale-105">
             <MapPin class="w-5" />
-            <span class="hidden md:block">Walddörferstraße 1A</span>
+            <span class="hidden text-sm md:block lg:text-base">Walddörferstraße 1A</span>
           </div>
         </a>
       </div>
 
       <div class="mt-2.5 flex items-center gap-5">
-        <a href="https://www.instagram.com/wwehger/">
+        <a href="https://www.instagram.com/wwehger/" target="_blank">
           <Instagram
             class="w-6 fill-white stroke-header duration-300 hover:scale-105 hover:fill-button"
           />
