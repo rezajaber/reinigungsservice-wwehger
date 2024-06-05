@@ -29,14 +29,14 @@ const scrollTo = (id: string) => {
         <div class="text-center lg:text-start">
           <h3 class="mb-3 text-4xl font-medium text-white lg:text-5xl">Kontaktieren Sie Uns</h3>
           <span class="text-lg text-white lg:text-xl"
-            >Rufen Sie uns an und bekommen ein kostenloses Angebot!</span
+            >Rufen Sie uns an und bekommen Sie ein kostenloses Angebot!</span
           >
         </div>
-        <div class="right-0 mt-4 grid place-items-center gap-4 lg:flex lg:items-center">
-          <Phone
-            class="h-16 w-16 cursor-pointer rounded-full border-2 border-button bg-button fill-black stroke-none p-3.5 duration-300 ease-in-out"
-          />
-          <a href="tel:+49 178 1797307">
+        <a href="tel:+49 178 1797307">
+          <div class="right-0 mt-4 grid place-items-center gap-4 lg:flex lg:items-center">
+            <Phone
+              class="h-16 w-16 cursor-pointer rounded-full border-2 border-button bg-button fill-black stroke-none p-3.5 duration-300 ease-in-out"
+            />
             <div class="grid">
               <span class="text-center text-xl text-white opacity-80 lg:text-start"
                 >Unser Kontakt</span
@@ -46,8 +46,8 @@ const scrollTo = (id: string) => {
                 >+49 178 1797307</span
               >
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       <div class="mt-20 lg:flex">
@@ -66,7 +66,7 @@ const scrollTo = (id: string) => {
             </p>
 
             <div class="mt-4 flex items-center gap-5">
-              <a href="https://www.instagram.com/wwehger/">
+              <a href="https://www.instagram.com/wwehger/" target="_blank">
                 <Instagram class="w-6 fill-white duration-300 hover:scale-105 hover:fill-button" />
               </a>
               <a href="">

@@ -2,6 +2,19 @@
 import { Stars, ArrowRight } from 'lucide-vue-next'
 import ServiceItem from './ServiceItem.vue'
 
+const scrollTo = (id: string) => {
+  const element = document.getElementById(id)
+  if (element) {
+    const offset = -50
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY
+    const offsetPosition = elementPosition + offset
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+}
+
 const services = [
   { src: './src/assets/img/services/service-one.jpg', alt: 'Winterdienst', text: 'Winterdienst' },
 
@@ -47,7 +60,9 @@ const services = [
                 wohlfühlendem Ort zu machen.
               </p>
               <div class="flex cursor-pointer items-center gap-1.5">
-                <p class="talk-underline px-0 text-lg text-white">Let's talk</p>
+                <p class="talk-underline px-0 text-lg text-white" @click="scrollTo('contact')">
+                  Fangen wir an
+                </p>
                 <ArrowRight class="ml-1.5 w-5 stroke-white" />
               </div>
             </div>
