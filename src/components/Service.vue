@@ -1,6 +1,29 @@
 <script setup lang="ts">
-import Button from './ui/button/Button.vue'
 import { Stars, ArrowRight } from 'lucide-vue-next'
+import ServiceItem from './ServiceItem.vue'
+
+const services = [
+  { src: './src/assets/img/services/service-one.jpg', alt: 'Winterdienst', text: 'Winterdienst' },
+
+  {
+    src: './src/assets/img/services/service-two.jpg',
+    alt: 'Wohnungsauflösung',
+    text: 'Wohnungsauflösung'
+  },
+  { src: './src/assets/img/services/service-three.jpg', alt: 'Entrümplung', text: 'Entrümplung' },
+  {
+    src: './src/assets/img/services/service-four.jpg',
+    alt: 'Hausmeisterservice',
+    text: 'Hausmeisterservice'
+  },
+  {
+    src: './src/assets/img/services/service-five.jpg',
+    alt: 'Gartenarbeiten',
+    text: 'Gartenarbeiten'
+  },
+  { src: './src/assets/img/services/service-six.jpg', alt: 'Entsorgung', text: 'Entsorgung' },
+  { src: './src/assets/img/services/service-one.jpg', alt: 'Reinigung', text: 'Reinigung' }
+]
 </script>
 
 <template>
@@ -15,18 +38,16 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
           </div>
 
           <div class="grid gap-5 md:flex md:gap-14">
-            <h2 class="mt-2.5 text-6xl font-medium text-white">
-              Elevate Your Space with Our Service
+            <h2 class="mt-2.5 text-5xl font-medium text-white md:text-6xl">
+              Verwandeln Sie Ihren Raum
             </h2>
-
             <div>
               <p class="mb-4 text-xl text-sub">
-                Exteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                Wir machen Ihr Zuhause und oder Ihren Arbeitsplatz zu einem sauberen und
+                wohlfühlendem Ort zu machen.
               </p>
-
               <div class="flex cursor-pointer items-center gap-1.5">
-                <p variant="ghost" class="talk-underline px-0 text-lg text-white">Let's talk</p>
+                <p class="talk-underline px-0 text-lg text-white">Let's talk</p>
                 <ArrowRight class="ml-1.5 w-5 stroke-white" />
               </div>
             </div>
@@ -36,83 +57,13 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
 
       <!-- GRID -->
       <div class="mt-14 flex flex-wrap justify-center gap-6">
-        <div class="grid place-items-center">
-          <img
-            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
-            src="../assets/img/services/service-one.jpg"
-            alt=""
-          />
-          <Button
-            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
-            >Winterdienst</Button
-          >
-        </div>
-        <div class="grid place-items-center">
-          <img
-            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
-            src="../assets/img/services/service-two.jpg"
-            alt=""
-          />
-          <Button
-            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
-            >Wohnungsauflösung</Button
-          >
-        </div>
-        <div class="grid place-items-center">
-          <img
-            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
-            src="../assets/img/services/service-three.jpg"
-            alt=""
-          />
-          <Button
-            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
-            >Entrümplung</Button
-          >
-        </div>
-        <div class="grid place-items-center">
-          <img
-            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
-            src="../assets/img/services/service-four.jpg"
-            alt=""
-          />
-          <Button
-            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
-            >Hausmeisterservice</Button
-          >
-        </div>
-        <div class="grid place-items-center">
-          <img
-            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
-            src="../assets/img/services/service-five.jpg"
-            alt=""
-          />
-          <Button
-            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
-            >Gartenarbeiten</Button
-          >
-        </div>
-        <div class="grid place-items-center">
-          <img
-            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
-            src="../assets/img/services/service-six.jpg"
-            alt=""
-          />
-          <Button
-            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
-            >Entsorgung</Button
-          >
-        </div>
-        <div class="grid place-items-center">
-          <img
-            class="h-64 rounded-xl object-cover sm:h-52 lg:h-64"
-            src="../assets/img/services/service-six.jpg"
-            alt=""
-          />
-          <Button
-            class="z-10 -mt-6 w-fit rounded-full px-14 py-6 text-center text-xl font-medium hover:bg-header"
-            >Reinigung</Button
-          >
-        </div>
+        <ServiceItem
+          v-for="service in services"
+          :key="service.text"
+          :imageSrc="service.src"
+          :imageAlt="service.alt"
+          :buttonText="service.text"
+        />
       </div>
     </div>
   </div>
@@ -120,18 +71,18 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
 
 <style scoped>
 .talk-underline {
-  position: relative; /* Needed to position the ::after element */
+  position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
 .talk-underline::after {
   content: '';
   position: absolute;
-  bottom: -2px; /* Adjust according to the desired distance from the text */
+  bottom: -2px;
   left: 0;
   width: 0;
-  height: 2px; /* Adjust according to the desired thickness of the underline */
-  background-color: currentColor; /* Use the text color */
+  height: 2px;
+  background-color: currentColor;
   transition: width 0.3s ease-in-out;
 }
 
@@ -143,7 +94,6 @@ import { Stars, ArrowRight } from 'lucide-vue-next'
   transform: scale(1.05);
 }
 
-/* Hover effect for the droplets icon */
 .group:hover .droplets-icon {
   background-color: green !important;
   stroke: white;
