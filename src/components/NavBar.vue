@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import Button from './ui/button/Button.vue'
 import {
   Dialog,
@@ -11,6 +12,8 @@ import {
 
 import { UserRound, Menu, Mail, Phone } from 'lucide-vue-next'
 
+const dialogOpen = ref(false)
+
 const scrollTo = (id: string) => {
   const element = document.getElementById(id)
   if (element) {
@@ -22,6 +25,7 @@ const scrollTo = (id: string) => {
       behavior: 'smooth'
     })
   }
+  dialogOpen.value = false // Close the dialog after scrolling
 }
 </script>
 
@@ -51,7 +55,7 @@ const scrollTo = (id: string) => {
 
       <!-- MOBILE MENU -->
       <div class="flex md:hidden">
-        <Dialog>
+        <Dialog v-model:open="dialogOpen">
           <DialogTrigger as-child>
             <Menu class="cursor-pointer" />
           </DialogTrigger>
@@ -59,7 +63,7 @@ const scrollTo = (id: string) => {
           <DialogContent class="max-w-xs rounded-lg md:max-w-md">
             <DialogHeader>
               <DialogTitle>Wir helfen Ihnen gerne!</DialogTitle>
-              <DialogDescription> Hier finden sie uns schnell und einfach. </DialogDescription>
+              <DialogDescription>Hier finden Sie uns schnell und einfach.</DialogDescription>
             </DialogHeader>
 
             <div class="grid gap-2.5">
@@ -71,8 +75,12 @@ const scrollTo = (id: string) => {
               </div>
 
               <div class="flex gap-2">
-                <Button class="w-full rounded-xl"><Mail class="mr-1.5 w-5" />Kontakt</Button>
-                <Button class="w-full rounded-xl"><Phone class="mr-1.5 w-5" />Mail</Button>
+                <Button @click="scrollTo('contact')" class="w-full rounded-xl"
+                  ><Mail class="mr-1.5 w-5" />Kontakt</Button
+                >
+                <Button @click="scrollTo('contact')" class="w-full rounded-xl"
+                  ><Phone class="mr-1.5 w-5" />Mail</Button
+                >
               </div>
             </div>
           </DialogContent>
