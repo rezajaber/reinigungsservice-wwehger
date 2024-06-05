@@ -60,11 +60,25 @@ const scrollTo = (id: string) => {
               Willkommen bei WWEHGER, hier finden Sie <br />"PERFEKTION IN JEDER DIENSTLEISTUNG"
             </p>
 
-            <div class="mt-4 flex gap-5">
-              <Instagram class="w-6 fill-white stroke-[#0F2E38]" />
-              <Facebook class="w-5 fill-white stroke-white" />
-              <Linkedin class="w-5 fill-white stroke-white" />
-              <Twitter class="w-5 fill-white stroke-white" />
+            <div class="mt-4 flex items-center gap-5">
+              <a href="https://www.instagram.com/wwehger/">
+                <Instagram class="w-6 fill-white duration-300 hover:scale-105 hover:fill-button" />
+              </a>
+              <a href="">
+                <Facebook
+                  class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
+                />
+              </a>
+              <a href="">
+                <Linkedin
+                  class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
+                />
+              </a>
+              <a href="">
+                <Twitter
+                  class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
+                />
+              </a>
             </div>
           </div>
         </div>
