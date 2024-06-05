@@ -30,7 +30,7 @@ const scrollTo = (id: string) => {
           <h6 class="font-medium tracking-wide text-header">ÜBER UNS</h6>
         </div>
 
-        <h3 class="mt-2 text-5xl sm:text-6xl">Wir Sind Für Sie Da!<br />Bereit & Engagiert</h3>
+        <h3 class="mt-2 text-5xl sm:text-6xl">Wir sind für Sie da!<br />Bereit & engagiert</h3>
         <p class="mt-7 text-lg opacity-80">
           Unser engagiertes Team sorgt dafür, dass Ihr Zuhause oder Arbeitsplatz stets in bestem
           Licht erstrahlt. Mit unserem umfassenden Service stellen wir Ihre Zufriedenheit sicher.

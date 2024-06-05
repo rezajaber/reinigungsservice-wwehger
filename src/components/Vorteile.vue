@@ -24,7 +24,7 @@ const cards = [
     icon: Stars,
     title: 'Zufriedenheit:',
     description:
-      'Unsere Kundenbewertungen sprechen für sich - exzellenter Service, zufriedene Kunden. Wir sind stolz auf das positive Feedback und die Weiterempfehlungen unserer zufriedenen Kunden.'
+      'Unsere Kundenbewertungen sprechen für sich – exzellenter Service, zufriedene Kunden. Wir sind stolz auf das positive Feedback und die Weiterempfehlungen unserer zufriedenen Kunden.'
   }
 ]
 </script>

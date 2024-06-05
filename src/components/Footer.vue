@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import Credentials from './Credentials.vue'
+
+import { ref } from 'vue'
 import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
+
+const currentYear = ref(new Date().getFullYear())
 
 const scrollTo = (id: string) => {
   const element = document.getElementById(id)
@@ -216,7 +220,7 @@ const scrollTo = (id: string) => {
       <hr class="my-6 h-px border-none bg-gray-200" />
 
       <div>
-        <p class="text-center text-sub">© WWEHGER 2024 - All rights reserved</p>
+        <p class="text-center text-sub">© WWEHGER {{ currentYear }} - All rights reserved</p>
       </div>
     </div>
   </div>
