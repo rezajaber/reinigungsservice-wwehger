@@ -34,17 +34,20 @@ const scrollTo = (id: string) => {
     <div
       class="navbar-shadow mx-auto flex h-[80px] max-w-[1080px] items-center justify-between rounded-xl bg-white px-5 py-4 shadow-lg md:h-[88px]"
     >
-      <img
-        @click="scrollTo('header')"
-        class="h-8 w-auto cursor-pointer duration-100 ease-in hover:scale-105 md:h-10"
-        src="../assets/img/logo.png"
-        alt="Logo-WWEHGER"
-      />
+      <div class="grid place-items-center">
+        <img
+          @click="scrollTo('header')"
+          class="h-8 w-auto cursor-pointer duration-100 ease-in hover:scale-105 md:h-10"
+          src="../assets/img/logo.png"
+          alt="Logo-WWEHGER"
+        />
+        <span>wehger</span>
+      </div>
 
       <!-- MD AND ABOVE -->
       <ul class="hidden cursor-pointer gap-11 font-medium md:flex">
-        <li @click="scrollTo('service')">Service</li>
         <li @click="scrollTo('aboutus')">Über uns</li>
+        <li @click="scrollTo('service')">Service</li>
         <li @click="scrollTo('leistungen')">Leistungen</li>
         <li @click="scrollTo('process')">Prozess</li>
       </ul>
@@ -69,8 +72,8 @@ const scrollTo = (id: string) => {
             <div class="grid gap-2.5">
               <div class="grid gap-2">
                 <Button class="rounded-xl" @click="scrollTo('hero')">Home</Button>
-                <Button class="rounded-xl" @click="scrollTo('service')">Service</Button>
                 <Button class="rounded-xl" @click="scrollTo('aboutus')">Über Uns</Button>
+                <Button class="rounded-xl" @click="scrollTo('service')">Service</Button>
                 <Button class="rounded-xl" @click="scrollTo('leistungen')">Leistungen</Button>
               </div>
 

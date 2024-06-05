@@ -46,16 +46,6 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
             class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
           />
         </a>
-        <a href="">
-          <Linkedin
-            class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
-          />
-        </a>
-        <a href="">
-          <Twitter
-            class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
-          />
-        </a>
       </div>
     </div>
   </div>

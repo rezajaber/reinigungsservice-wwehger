@@ -2,7 +2,7 @@
 import Credentials from './Credentials.vue'
 
 import { ref } from 'vue'
-import { Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-vue-next'
+import { Phone, Facebook, Instagram, Mail } from 'lucide-vue-next'
 
 const currentYear = ref(new Date().getFullYear())
 
@@ -47,6 +47,23 @@ const scrollTo = (id: string) => {
               >
             </div>
           </div>
+
+          <a href="mailto:bljerim.zaiti@web.de">
+            <div class="right-0 mt-4 grid place-items-center gap-4 lg:flex lg:items-center">
+              <Mail
+                class="h-16 w-16 cursor-pointer rounded-full border-2 border-button bg-button fill-black stroke-button p-3.5 duration-300 ease-in-out"
+              />
+              <div class="grid">
+                <span class="text-center text-xl text-white opacity-80 lg:text-start"
+                  >Unser Kontakt</span
+                >
+                <span
+                  class="text-center text-sm font-medium text-white sm:text-xl lg:text-2xl 2xl:text-4xl"
+                  >bljerim.zaiti@web.de
+                </span>
+              </div>
+            </div>
+          </a>
         </a>
       </div>
 
@@ -74,22 +91,29 @@ const scrollTo = (id: string) => {
                   class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
                 />
               </a>
-              <a href="">
-                <Linkedin
-                  class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
-                />
-              </a>
-              <a href="">
-                <Twitter
-                  class="w-5 fill-white stroke-white duration-300 hover:scale-105 hover:fill-button hover:stroke-button"
-                />
-              </a>
             </div>
           </div>
         </div>
 
         <div class="mt-6 lg:mt-0 lg:flex-1">
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div>
+              <h3
+                @click="scrollTo('aboutus')"
+                class="cursor-pointer uppercase text-white hover:underline"
+              >
+                Über uns
+              </h3>
+              <span
+                @click="scrollTo('aboutus')"
+                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                >Sektion</span
+              >
+              <span class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                ><Credentials
+              /></span>
+            </div>
+
             <div>
               <h3
                 @click="scrollTo('service')"
@@ -129,23 +153,20 @@ const scrollTo = (id: string) => {
               <span
                 @click="scrollTo('leistungen')"
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Winterdienst</span
-              >
-              <span
-                @click="scrollTo('leistungen')"
-                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
                 >Wohnungsauflösung</span
               >
               <span
                 @click="scrollTo('leistungen')"
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Entrümplung</span
-              >
+                >Entsorgung / Entrümplung
+              </span>
+
               <span
                 @click="scrollTo('leistungen')"
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Entrümplung</span
-              >
+                >Abrissarbeiten
+              </span>
+
               <span
                 @click="scrollTo('leistungen')"
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
@@ -156,15 +177,17 @@ const scrollTo = (id: string) => {
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
                 >Gartenarbeiten</span
               >
+
               <span
                 @click="scrollTo('leistungen')"
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Entsorgung</span
+                >Winterdienst</span
               >
+
               <span
                 @click="scrollTo('leistungen')"
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Reinigung</span
+                >Gebäudereinigung</span
               >
             </div>
 
@@ -195,23 +218,6 @@ const scrollTo = (id: string) => {
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
                 >Zufriedenheit</span
               >
-            </div>
-
-            <div>
-              <h3
-                @click="scrollTo('aboutus')"
-                class="cursor-pointer uppercase text-white hover:underline"
-              >
-                Über uns
-              </h3>
-              <span
-                @click="scrollTo('aboutus')"
-                class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                >Sektion</span
-              >
-              <span class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                ><Credentials
-              /></span>
             </div>
           </div>
         </div>
