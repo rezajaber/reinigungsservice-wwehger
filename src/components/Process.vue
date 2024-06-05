@@ -16,7 +16,7 @@ import { Stars } from 'lucide-vue-next'
     <div class="mt-16 flex flex-wrap items-start justify-center gap-20 xl:gap-20 2xl:gap-32">
       <div class="group relative grid place-items-center gap-6">
         <span
-          class="absolute left-7 top-0 flex h-11 w-11 items-center justify-center rounded-full bg-button font-semibold transition duration-500 ease-in-out group-hover:bg-green-500 group-hover:text-white"
+          class="absolute left-14 top-0 flex h-11 w-11 items-center justify-center rounded-full bg-button font-semibold transition duration-500 ease-in-out group-hover:bg-green-500 group-hover:text-white"
           >1
         </span>
         <img
