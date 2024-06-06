@@ -19,7 +19,7 @@ import { Phone, Mail } from 'lucide-vue-next'
       <span>Impressum & Datenschutz</span>
     </DialogTrigger>
     <DialogContent
-      class="max-h-[90dvh] max-w-[360px] grid-rows-[auto_minmax(0,1fr)_auto] rounded-md p-0 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl"
+      class="max-h-[90dvh] max-w-[350px] grid-rows-[auto_minmax(0,1fr)_auto] rounded-md p-0 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl"
     >
       <DialogHeader class="p-6 pb-0">
         <DialogTitle>Impressum & Datenschutz</DialogTitle>
@@ -410,7 +410,9 @@ import { Phone, Mail } from 'lucide-vue-next'
 
             <br /><br />
             Eine Übersicht über die Facebook Social-Media-Elemente finden Sie hier:
-            https://developers.facebook.com/docs/plugins/?locale=de_DE.
+            <a href="https://developers.facebook.com/docs/plugins/?locale=de_DE"
+              >Facebook-SocialMedia-Elements</a
+            >
 
             <br /><br />
             Wenn das Social-Media-Element aktiv ist, wird eine direkte Verbindung zwischen Ihrem
@@ -421,7 +423,10 @@ import { Phone, Mail } from 'lucide-vue-next'
             Facebook den Besuch dieser Website Ihrem Benutzerkonto zuordnen. Wir weisen darauf hin,
             dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie
             deren Nutzung durch Facebook erhalten. Weitere Informationen hierzu finden Sie in der
-            Datenschutzerklärung von Facebook unter: https://de-de.facebook.com/privacy/explanation.
+            Datenschutzerklärung von Facebook unter:
+            <a href="https://de-de.facebook.com/privacy/explanation."
+              >FaceBook-Privacy-Explanation</a
+            >
 
             <br /><br />
             Die Nutzung dieses Dienstes erfolgt auf Grundlage Ihrer Einwilligung nach Art. 6 Abs. 1
@@ -436,20 +441,24 @@ import { Phone, Mail } from 'lucide-vue-next'
             Facebook. Die nach der Weiterleitung erfolgende Verarbeitung durch Facebook ist nicht
             Teil der gemeinsamen Verantwortung. Die uns gemeinsam obliegenden Verpflichtungen wurden
             in einer Vereinbarung über gemeinsame Verarbeitung festgehalten. Den Wortlaut der
-            Vereinbarung finden Sie unter: https://www.facebook.com/legal/controller_addendum. Laut
-            dieser Vereinbarung sind wir für die Erteilung der Datenschutzinformationen beim Einsatz
-            des Facebook-Tools und für die datenschutzrechtlich sichere Implementierung des Tools
-            auf unserer Website verantwortlich. Für die Datensicherheit der Facebook- Produkte ist
-            Facebook verantwortlich. Betroffenenrechte (z. B. Auskunftsersuchen) hinsichtlich der
-            bei Facebook verarbeiteten Daten können Sie direkt bei Facebook geltend machen. Wenn Sie
-            die Betroffenenrechte bei uns geltend machen, sind wir verpflichtet, diese an Facebook
-            weiterzuleiten.
+            Vereinbarung finden Sie unter:
+            <a href="https://www.facebook.com/legal/controller_addendum"
+              >Facebook-Legal-Controller</a
+            >. Laut dieser Vereinbarung sind wir für die Erteilung der Datenschutzinformationen beim
+            Einsatz des Facebook-Tools und für die datenschutzrechtlich sichere Implementierung des
+            Tools auf unserer Website verantwortlich. Für die Datensicherheit der Facebook- Produkte
+            ist Facebook verantwortlich. Betroffenenrechte (z. B. Auskunftsersuchen) hinsichtlich
+            der bei Facebook verarbeiteten Daten können Sie direkt bei Facebook geltend machen. Wenn
+            Sie die Betroffenenrechte bei uns geltend machen, sind wir verpflichtet, diese an
+            Facebook weiterzuleiten.
 
             <br /><br />
             Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission
             gestützt. Details finden Sie hier:
-            https://www.facebook.com/legal/EU_data_transfer_addendum,
-            https://de-de.facebook.com/help/566994660333381 und https://www.facebook.com/policy.php.
+            <a href="https://www.facebook.com/legal/EU_data_transfer_addendum"
+              >Facebook-Data-Transfer</a
+            >, <a href="https://de-de.facebook.com/help/566994660333381">Facebook-Help</a> und
+            <a href="https://www.facebook.com/policy.php">Facebook-Policy</a>.
 
             <br /><br />
             Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework“
@@ -458,8 +467,11 @@ import { Phone, Mail } from 'lucide-vue-next'
             gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich,
             diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom
             Anbieter unter folgendem Link:
-            https://www.dataprivacyframework.gov/s/participant-search/participant-
-            detail?contact=true&id=a2zt0000000GnywAAC&status=Active
+            <a
+              href="https://www.dataprivacyframework.gov/s/participant-search/participant-
+              detail?contact=true&id=a2zt0000000GnywAAC&status=Active"
+              >Dataprivacy-Framework</a
+            >
 
             <br /><br />
             <p class="text-lg font-medium">Instagram</p>
@@ -493,25 +505,22 @@ import { Phone, Mail } from 'lucide-vue-next'
             Verarbeitung durch Facebook bzw. Instagram ist nicht Teil der gemeinsamen Verantwortung.
             Die uns gemeinsam obliegenden Verpflichtungen wurden in einer Vereinbarung über
             gemeinsame Verarbeitung festgehalten. Den Wortlaut der Vereinbarung finden Sie unter:
-            https://www.facebook.com/legal/controller_addendum. Laut dieser Vereinbarung sind wir
-            für die Erteilung der Datenschutzinformationen beim Einsatz des Facebook- bzw.
-            Instagram-Tools und für die datenschutzrechtlich sichere Implementierung des Tools auf
-            unserer Website verantwortlich. Für die Datensicherheit der Facebook bzw.
-            Instagram-Produkte ist Facebook verantwortlich. Betroffenenrechte (z. B.
-            Auskunftsersuchen) hinsichtlich der bei Facebook bzw. Instagram verarbeiteten Daten
+            <a href="https://www.facebook.com/legal/controller_addendum"
+              >Facebook-Legal-Controller</a
+            >. Laut dieser Vereinbarung sind wir für die Erteilung der Datenschutzinformationen beim
+            Einsatz des Facebook- bzw. Instagram-Tools und für die datenschutzrechtlich sichere
+            Implementierung des Tools auf unserer Website verantwortlich. Für die Datensicherheit
+            der Facebook bzw. Instagram-Produkte ist Facebook verantwortlich. Betroffenenrechte (z.
+            B. Auskunftsersuchen) hinsichtlich der bei Facebook bzw. Instagram verarbeiteten Daten
             können Sie direkt bei Facebook geltend machen. Wenn Sie die Betroffenenrechte bei uns
             geltend machen, sind wir verpflichtet, diese an Facebook weiterzuleiten.
 
             <br /><br />
             Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission
             gestützt. Details finden Sie hier:
-            https://www.facebook.com/legal/EU_data_transfer_addendum,
-            https://privacycenter.instagram.com/policy/ und
-            https://de-de.facebook.com/help/566994660333381.
 
             <br /><br />
             Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Instagram:
-            https://privacycenter.instagram.com/policy/.
 
             <br /><br />
             Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework“
@@ -520,8 +529,6 @@ import { Phone, Mail } from 'lucide-vue-next'
             gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich,
             diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom
             Anbieter unter folgendem Link:
-            https://www.dataprivacyframework.gov/s/participant-search/participant-
-            detail?contact=true&id=a2zt0000000GnywAAC&status=Active
 
             <br /><br />
             Quelle: https://www.e-recht24.de
