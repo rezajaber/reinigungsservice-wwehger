@@ -17,34 +17,34 @@ const scrollTo = (id: string) => {
 
 const services = [
   {
-    src: './src/assets/img/services/service-one.jpg',
+    src: './assets/img/services/service-one.jpg',
     alt: 'Wohnungsauflösung',
     text: 'Wohnungsauflösung'
   },
 
   {
-    src: './src/assets/img/services/service-two.jpg',
+    src: './assets/img/services/service-two.jpg',
     alt: 'Entrümplung / Entsorgung',
     text: 'Entrümplung / Entsorgung'
   },
   {
-    src: './src/assets/img/services/service-three.jpg',
+    src: './assets/img/services/service-three.jpg',
     alt: 'Abrissarbeiten',
     text: 'Abrissarbeiten'
   },
   {
-    src: './src/assets/img/services/service-four.jpg',
+    src: './assets/img/services/service-four.jpg',
     alt: 'Hausmeisterservice',
     text: 'Hausmeisterservice'
   },
   {
-    src: './src/assets/img/services/service-five.jpg',
+    src: './assets/img/services/service-five.jpg',
     alt: 'Gartenarbeiten',
     text: 'Gartenarbeiten'
   },
-  { src: './src/assets/img/services/service-six.jpg', alt: 'Winterdienst', text: 'Winterdienst' },
+  { src: './assets/img/services/service-six.jpg', alt: 'Winterdienst', text: 'Winterdienst' },
   {
-    src: './src/assets/img/services/service-one.jpg',
+    src: './assets/img/services/service-one.jpg',
     alt: 'Gebäudereinigung',
     text: 'Gebäudereinigung'
   }

@@ -19,8 +19,12 @@ const scrollTo = (id: string) => {
 <template>
   <div>
     <div class="mx-auto grid max-w-[1280px] justify-between gap-16 lg:flex">
-      <div class="lg:w-1/2">
-        <img class="h-full rounded-xl object-cover" src="../assets/img/about-card-3.jpeg" alt="" />
+      <div class="grid place-items-center md:place-items-start lg:w-1/2">
+        <img
+          class="h-56 rounded-xl object-cover sm:h-96 lg:h-full"
+          src="../assets/img/about-card-3.jpeg"
+          alt=""
+        />
       </div>
 
       <!-- RIGHT SIDE -->
