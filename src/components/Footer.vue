@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Credentials from './Credentials.vue'
-
 import { ref } from 'vue'
 import { Phone, Facebook, Instagram, Mail } from 'lucide-vue-next'
 
@@ -109,9 +107,11 @@ const scrollTo = (id: string) => {
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
                 >Sektion</span
               >
-              <span class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                ><Credentials
-              /></span>
+              <RouterLink to="/credentials">
+                <span class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                  >Impressum & Datenschutz</span
+                >
+              </RouterLink>
             </div>
 
             <div>
