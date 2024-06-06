@@ -17,36 +17,53 @@ const scrollTo = (id: string) => {
 
 const services = [
   {
-    src: './assets/img/services/service-one.jpg',
-    alt: 'Wohnungsauflösung',
-    text: 'Wohnungsauflösung'
-  },
-
-  {
-    src: './assets/img/services/service-two.jpg',
-    alt: 'Entrümplung / Entsorgung',
-    text: 'Entrümplung / Entsorgung'
+    src: '../src/assets/img/services/service-one.jpg',
+    alt: 'Umzug & Transport',
+    button: 'Umzug & Transport',
+    description:
+      'Von der Umzugsplanung über den Möbel- und Kistentransport bis hin zu optionalen Services wie dem Auspacken der Umzugskartons, der Möbelmontage sowie Reinigungs-, Maler- und Renovierungsarbeiten. Wir bieten Ihnen ein umfangreiches, individuell angepasstes Angebot und unterstützen Sie mit unseren Services für Ihren Umzug. Wir verhelfen Ihnen zu einem erfolgreichen, angenehmen und besonders für Sie stressfreien Umzug.'
   },
   {
-    src: './assets/img/services/service-three.jpg',
-    alt: 'Abrissarbeiten',
-    text: 'Abrissarbeiten'
+    src: '../src/assets/img/services/service-two.jpg',
+    alt: 'Entrümplung / Entsorgung / Haushaltsauflösung',
+    button: 'Entrümplung | Entsorgung | Haushaltsauflösung',
+    description:
+      'Unser Team steht Ihnen zur Verfügung, wenn Sie ein Unternehmen auflösen, eine Erbschaft erhalten oder Ihren Keller oder Ihre Garage aufräumen müssen. Wir übernehmen die Haushaltsauflösung, schaffen Platz, verwerten nützliche Gegenstände und entsorgen Abfälle jeglicher Art (privat/gewerblich) unter Berücksichtigung der Umweltstandards.'
   },
   {
-    src: './assets/img/services/service-four.jpg',
+    src: '../src/assets/img/services/service-three.jpg',
+    alt: 'Abriss- & Abbrucharbeiten',
+    button: 'Abriss- & Abbrucharbeiten',
+    description:
+      'Wir bieten Abriss- oder Abbrucharbeiten für Teile eines Gebäudes/Anbaus im Innen- oder Außenbereich, komplette Innenraum-Neugestaltung, Erstellung einer Öffnung in der Wand, Einsetzen/Entfernen eines Kamins oder Terrassenabbruch in Ihrem Garten. Mit unserer Expertise in diesem Bereich können wir jede Arbeit flexibel, schnell und problemlos für Sie und nach Ihren speziellen Wünschen erledigen.'
+  },
+  {
+    src: '../src/assets/img/services/service-four.jpg',
     alt: 'Hausmeisterservice',
-    text: 'Hausmeisterservice'
+    button: 'Hausmeisterservice',
+    description:
+      'Sie suchen einen flexiblen und engagierten Hausmeister Ihres Vertrauens für Ihre Immobilie oder Ihr Unternehmen? Oder Sie brauchen nur für einen kleinen Auftrag oder für eine bestimmte kurze Zeit die Dienste eines Hausmeisters? Bei WWEHGER stehen wir mit unseren spezialisierten Hausmeisterdiensten zur Verfügung und freuen uns auf Ihre Anfrage!'
   },
   {
-    src: './assets/img/services/service-five.jpg',
+    src: '../src/assets/img/services/service-five.jpg',
     alt: 'Gartenarbeiten',
-    text: 'Gartenarbeiten'
+    button: 'Gartenarbeiten',
+    description:
+      'Sie haben ein kleines Projekt im Garten vor und benötigen jemanden, der Ihre Vision versteht und umsetzen kann, oder wollen zuverlässige Helfer für Rasenmähen, Hecke schneiden, Unkraut zupfen und Co.? Sie besitzen oder managen eine Immobilie oder ein Unternehmen und auch dort soll es in Ihrem Vorgarten gepflegt und ordentlich aussehen? Unser Team ist für Sie und Ihre Wünsche da! Vereinbaren Sie ein Beratungsgespräch oder erfragen Sie ein unverbindliches Angebot.'
   },
-  { src: './assets/img/services/service-six.jpg', alt: 'Winterdienst', text: 'Winterdienst' },
   {
-    src: './assets/img/services/service-one.jpg',
-    alt: 'Gebäudereinigung',
-    text: 'Gebäudereinigung'
+    src: '../src/assets/img/services/service-six.jpg',
+    alt: 'Winterdienst',
+    button: 'Winterdienst',
+    description:
+      'Der zuverlässige Winterdienst für Sie als Privatperson im Vorgarten, für Ihr Büro/Gebäude, ganze Straßen oder sogar mehrere Bezirke und Routen - und das, wenn gewünscht, jederzeit im 24/7-Notfall-Winterdienst!'
+  },
+  {
+    src: '../src/assets/img/services/service-one.jpg',
+    alt: 'Reinigungsarbeiten',
+    button: 'Reinigungsarbeiten',
+    description:
+      'Gebäudereinigung für Einzel- oder Großraumbüros, Bürokomplexe, Industriegebäude oder einfache Mehrfamilienhäuser - wir von WWEHGER stehen mit unserem professionellen Team für hygienische Sauberkeit bereit und krempeln die Ärmel hoch.'
   }
 ]
 </script>
@@ -86,10 +103,11 @@ const services = [
       <div class="mt-14 flex flex-wrap justify-center gap-6">
         <ServiceItem
           v-for="service in services"
-          :key="service.text"
+          :key="service.alt"
           :imageSrc="service.src"
           :imageAlt="service.alt"
-          :buttonText="service.text"
+          :buttonText="service.button"
+          :descriptionText="service.description"
         />
       </div>
     </div>
