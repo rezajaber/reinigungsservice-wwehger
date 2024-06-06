@@ -16,12 +16,12 @@ import { Stars } from 'lucide-vue-next'
     <div class="mt-16 flex flex-wrap items-start justify-center gap-20 xl:gap-20 2xl:gap-32">
       <div class="group relative grid place-items-center gap-6">
         <span
-          class="absolute left-14 top-0 flex h-11 w-11 items-center justify-center rounded-full bg-button font-semibold transition duration-500 ease-in-out group-hover:bg-green-500 group-hover:text-white"
+          class="absolute left-7 top-0 flex h-11 w-11 items-center justify-center rounded-full bg-button font-semibold transition duration-500 ease-in-out group-hover:bg-green-500 group-hover:text-white"
           >1
         </span>
         <img
           class="h-48 w-48 rounded-full object-cover"
-          src="../assets/img/process/process-one.jpeg"
+          src="../assets/img/service/umzug.jpg"
           alt=""
         />
         <p class="text-2xl font-medium">Servicewahl</p>
@@ -38,7 +38,7 @@ import { Stars } from 'lucide-vue-next'
         </span>
         <img
           class="h-48 w-48 rounded-full object-cover"
-          src="../assets/img/process/process-two.jpeg"
+          src="../assets/img/process/kontaktaufnahme.jpg"
           alt=""
         />
         <p class="text-2xl font-medium">Kontaktaufnahme</p>
@@ -55,7 +55,7 @@ import { Stars } from 'lucide-vue-next'
         </span>
         <img
           class="h-48 w-48 rounded-full object-cover"
-          src="../assets/img/process/process-three.jpeg"
+          src="../assets/img/process/angebotserstellung.jpg"
           alt=""
         />
         <p class="text-2xl font-medium">Angebotserstellung</p>
@@ -72,7 +72,7 @@ import { Stars } from 'lucide-vue-next'
         </span>
         <img
           class="h-48 w-48 rounded-full object-cover"
-          src="../assets/img/process/process-four.jpeg"
+          src="../assets/img/process/auftragsabwicklung.jpg"
           alt=""
         />
         <p class="text-2xl font-medium">Auftragsabwicklung</p>

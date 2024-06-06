@@ -73,7 +73,7 @@ const scrollTo = (id: string) => {
             <span @click="scrollTo('header')" class="cursor-pointer">
               <img
                 class="h-10 w-auto invert duration-100 ease-in hover:scale-105"
-                src="../assets/img/logo.png"
+                src="../assets/img/w-logo.png"
                 alt=""
               />
             </span>
@@ -84,7 +84,9 @@ const scrollTo = (id: string) => {
 
             <div class="mt-4 flex items-center gap-5">
               <a href="https://www.instagram.com/wwehger/" target="_blank">
-                <Instagram class="w-6 fill-white duration-300 hover:scale-105 hover:fill-button" />
+                <Instagram
+                  class="w-6 fill-white stroke-[#0F2E38] duration-300 hover:scale-105 hover:fill-button"
+                />
               </a>
               <a href="">
                 <Facebook

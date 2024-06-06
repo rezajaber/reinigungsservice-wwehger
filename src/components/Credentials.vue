@@ -473,6 +473,14 @@ import { Phone, Mail } from 'lucide-vue-next'
               >Dataprivacy-Framework</a
             >
 
+            <!-- BILDER -->
+            <br /><br />
+            Designed by pvproductions
+            <br />
+            Designed by freepik
+            <br />
+            Designed by Drazen Zigic
+
             <br /><br />
             <p class="text-lg font-medium">Instagram</p>
             Auf dieser Website sind Funktionen des Dienstes Instagram eingebunden. Diese Funktionen

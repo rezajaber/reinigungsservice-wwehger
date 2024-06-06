@@ -2,13 +2,13 @@
 import { Stars, ArrowRight } from 'lucide-vue-next'
 import ServiceItem from './ServiceItem.vue'
 
-import serviceOne from '../assets/img/service/service-one.jpeg'
-import serviceTwo from '../assets/img/service/service-two.jpeg'
-import serviceThree from '../assets/img/service/service-three.jpeg'
-import serviceFour from '../assets/img/service/service-four.jpeg'
-import serviceFive from '../assets/img/service/service-five.jpeg'
-import serviceSix from '../assets/img/service/service-six.jpeg'
-import serviceSeven from '../assets/img/service/service-one.jpeg'
+import serviceOne from '../assets/img/service/umzug.jpg'
+import serviceTwo from '../assets/img/service/sperrmüll.jpg'
+import serviceThree from '../assets/img/service/abriss.jpg'
+import serviceFour from '../assets/img/service/hausmeister.jpg'
+import serviceFive from '../assets/img/service/gartenarbeiten.jpg'
+import serviceSix from '../assets/img/service/winterdienst.jpg'
+import serviceSeven from '../assets/img/service/reinigung.jpg'
 
 const scrollTo = (id: string) => {
   const element = document.getElementById(id)

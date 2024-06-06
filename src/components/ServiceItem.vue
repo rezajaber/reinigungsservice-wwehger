@@ -18,7 +18,7 @@ defineProps<Props>()
     <img
       :src="imageSrc"
       :alt="imageAlt"
-      class="h-64 rounded-xl object-cover duration-300 ease-in-out group-hover:brightness-50"
+      class="h-64 w-[410px] rounded-xl object-cover duration-300 ease-in-out group-hover:brightness-50"
     />
     <p
       class="absolute inset-0 flex items-center justify-center opacity-0 duration-300 ease-in-out group-hover:opacity-100"
