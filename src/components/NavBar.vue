@@ -37,11 +37,10 @@ const scrollTo = (id: string) => {
       <div class="grid place-items-center">
         <img
           @click="scrollTo('header')"
-          class="h-8 w-auto cursor-pointer duration-100 ease-in hover:scale-105 md:h-10"
-          src="../assets/img/logo.png"
+          class="h-[72px] w-auto cursor-pointer duration-100 ease-in hover:scale-105"
+          src="../assets/img/logo-horizontal.png"
           alt="Logo-WWEHGER"
         />
-        <span>wehger</span>
       </div>
 
       <!-- MD AND ABOVE -->
