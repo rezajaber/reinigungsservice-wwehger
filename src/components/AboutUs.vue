@@ -36,8 +36,8 @@ const scrollTo = (id: string) => {
 
         <h3 class="mt-2 text-5xl sm:text-6xl">Wir sind für Sie da!<br />Bereit & engagiert</h3>
         <p class="mt-7 text-lg opacity-80">
-          Unser engagiertes Team sorgt dafür, dass Ihr Zuhause oder Arbeitsplatz stets in bestem
-          Licht erstrahlt. Mit unserem umfassenden Service stellen wir Ihre Zufriedenheit sicher.
+          Unser junges und engagiertes Team sorgt dafür, dass Ihr Auftrag stets nach Ihren Wünschen
+          erfolgt und wir mit unserem umfassenden Service Ihre Zufriedenheit sicherstellen.
         </p>
 
         <ul class="mt-4 grid gap-2">
@@ -48,7 +48,7 @@ const scrollTo = (id: string) => {
 
           <li class="flex items-center gap-2 text-lg opacity-90">
             <BadgeCheck class="w-6 fill-header stroke-[#f0f4fa]" />
-            Sauberkeit und Pflege mit höchster Präzision.
+            Ausführung unserer Dienstleistungen mit höchster Präzision.
           </li>
 
           <li class="flex items-center gap-2 text-lg opacity-90">

@@ -16,9 +16,9 @@
           PERFEKTION IN <br />JEDER DIENSTLEISTUNG
         </h1>
         <h6 class="sm:text-md text-sm md:text-lg">
-          Wir sind im Dienst – mit Hingabe und Sorgfalt. Unser Team sorgt für Sauberkeit und
-          Zufriedenheit.
-          <br class="hidden lg:block" />Vertrauen Sie auf unsere Expertise und Leidenschaft.
+          "Wir sind im Dienst - mit Hingabe und Sorgfalt. Unser junges Team sorgt dafür, dass Ihr
+          Auftrag nach Ihren Wünschen und Zufriedenheit erfüllt wird."
+          <p class="mt-2 lg:mt-0">Vertrauen Sie auf unsere Expertise und Leidenschaft.</p>
         </h6>
       </div>
     </div>

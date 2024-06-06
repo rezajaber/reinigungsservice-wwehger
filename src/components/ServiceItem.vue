@@ -23,7 +23,7 @@ defineProps<Props>()
     <p
       class="absolute inset-0 flex items-center justify-center opacity-0 duration-300 ease-in-out group-hover:opacity-100"
     >
-      <span class="-mt-6 rounded-lg bg-opacity-70 px-4 text-center text-xs font-medium text-white">
+      <span class="-mt-6 rounded-lg bg-opacity-70 px-4 text-center text-xs text-white">
         {{ descriptionText }}
       </span>
     </p>

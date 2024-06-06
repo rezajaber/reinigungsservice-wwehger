@@ -12,7 +12,7 @@ const cards = [
     icon: Users,
     title: 'Professionalität:',
     description:
-      'Unser professionelles Team ist hochqualifiziert und erfahren. Jeder Mitarbeiter bringt sein Fachwissen und seine Leidenschaft in die Arbeit ein, um Ihnen den bestmöglichen Service zu bieten.'
+      'Unser junges, engagiertes und freundliches Team ist hochqualifiziert und erfahren. Jeder Mitarbeiter bringt sein Fachwissen und seine Leidenschaft in die Arbeit ein, um Ihnen den bestmöglichen Service zu bieten.'
   },
   {
     icon: BadgeEuro,
@@ -24,7 +24,7 @@ const cards = [
     icon: Stars,
     title: 'Zufriedenheit:',
     description:
-      'Unsere Kundenbewertungen sprechen für sich – exzellenter Service, zufriedene Kunden. Wir sind stolz auf das positive Feedback und die Weiterempfehlungen unserer zufriedenen Kunden.'
+      'Unsere Kundenbewertungen sprechen für sich – exzellenter Service, zufriedene Kunden. Wir sind stolz auf das positive Feedback und die Weiterempfehlungen unserer zufriedenen Kunden, welche vor allem unsere kollegiale Art mögen.'
   }
 ]
 </script>

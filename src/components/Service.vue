@@ -93,9 +93,10 @@ const services = [
             </h2>
             <div>
               <p class="mb-4 text-xl text-sub">
-                Wir machen Ihr Zuhause und oder Ihren Arbeitsplatz zu einem sauberen und
-                wohlfühlendem Ort zu machen.
+                Wir und unsere bisherigen Kunden sind überzeugt, dass wir Ihren Auftrag zur vollen
+                Zufriedenheit ausführen werden.
               </p>
+
               <div class="flex cursor-pointer items-center gap-1.5">
                 <p class="talk-underline px-0 text-lg text-white" @click="scrollTo('contact')">
                   Fangen wir an
