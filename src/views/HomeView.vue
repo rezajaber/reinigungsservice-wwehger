@@ -9,8 +9,8 @@ import Process from '../components/Process.vue'
 
 import Footer from '../components/Footer.vue'
 
-import darkWallImage from '../assets/img/dark-wall.png'
-import WallImage from '../assets/img/wall.jpeg'
+import darkWallImage from '../assets/img/background/dark-wall.png'
+import WallImage from '../assets/img/background/light-wall.jpeg'
 </script>
 
 <template>

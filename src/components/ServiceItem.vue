@@ -9,24 +9,10 @@ interface Props {
 }
 
 defineProps<Props>()
-
-const scrollTo = (id: string) => {
-  const element = document.getElementById(id)
-  if (element) {
-    const offset = -50
-    const elementPosition = element.getBoundingClientRect().top + window.scrollY
-    const offsetPosition = elementPosition + offset
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    })
-  }
-}
 </script>
 
 <template>
   <div
-    @click="scrollTo('contact')"
     class="group relative grid cursor-pointer place-content-center place-items-center duration-300 ease-in-out hover:scale-[1.03]"
   >
     <img

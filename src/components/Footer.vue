@@ -234,7 +234,7 @@ const scrollTo = (id: string) => {
 
 <style scoped>
 .background-picture {
-  background-image: url('../assets/img/contact-us.png');
+  background-image: url('../assets/img/background/green-wall.png');
   /* You might want to adjust these properties based on your image and layout */
   background-size: cover;
   background-position: center;

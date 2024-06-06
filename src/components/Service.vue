@@ -2,6 +2,14 @@
 import { Stars, ArrowRight } from 'lucide-vue-next'
 import ServiceItem from './ServiceItem.vue'
 
+import serviceOne from '../assets/img/service/service-one.jpeg'
+import serviceTwo from '../assets/img/service/service-two.jpeg'
+import serviceThree from '../assets/img/service/service-three.jpeg'
+import serviceFour from '../assets/img/service/service-four.jpeg'
+import serviceFive from '../assets/img/service/service-five.jpeg'
+import serviceSix from '../assets/img/service/service-six.jpeg'
+import serviceSeven from '../assets/img/service/service-one.jpeg'
+
 const scrollTo = (id: string) => {
   const element = document.getElementById(id)
   if (element) {
@@ -17,49 +25,49 @@ const scrollTo = (id: string) => {
 
 const services = [
   {
-    src: '../src/assets/img/services/service-one.jpg',
+    src: serviceOne,
     alt: 'Umzug & Transport',
     button: 'Umzug & Transport',
     description:
       'Von der Umzugsplanung über den Möbel- und Kistentransport bis hin zu optionalen Services wie dem Auspacken der Umzugskartons, der Möbelmontage sowie Reinigungs-, Maler- und Renovierungsarbeiten. Wir bieten Ihnen ein umfangreiches, individuell angepasstes Angebot und unterstützen Sie mit unseren Services für Ihren Umzug. Wir verhelfen Ihnen zu einem erfolgreichen, angenehmen und besonders für Sie stressfreien Umzug.'
   },
   {
-    src: '../src/assets/img/services/service-two.jpg',
-    alt: 'Entrümplung / Entsorgung / Haushaltsauflösung',
-    button: 'Entrümplung | Entsorgung | Haushaltsauflösung',
+    src: serviceTwo,
+    alt: 'Entrümplung | Haushaltsauflösung',
+    button: 'Entrümplung | Haushaltsauflösung',
     description:
       'Unser Team steht Ihnen zur Verfügung, wenn Sie ein Unternehmen auflösen, eine Erbschaft erhalten oder Ihren Keller oder Ihre Garage aufräumen müssen. Wir übernehmen die Haushaltsauflösung, schaffen Platz, verwerten nützliche Gegenstände und entsorgen Abfälle jeglicher Art (privat/gewerblich) unter Berücksichtigung der Umweltstandards.'
   },
   {
-    src: '../src/assets/img/services/service-three.jpg',
+    src: serviceThree,
     alt: 'Abriss- & Abbrucharbeiten',
     button: 'Abriss- & Abbrucharbeiten',
     description:
       'Wir bieten Abriss- oder Abbrucharbeiten für Teile eines Gebäudes/Anbaus im Innen- oder Außenbereich, komplette Innenraum-Neugestaltung, Erstellung einer Öffnung in der Wand, Einsetzen/Entfernen eines Kamins oder Terrassenabbruch in Ihrem Garten. Mit unserer Expertise in diesem Bereich können wir jede Arbeit flexibel, schnell und problemlos für Sie und nach Ihren speziellen Wünschen erledigen.'
   },
   {
-    src: '../src/assets/img/services/service-four.jpg',
+    src: serviceFour,
     alt: 'Hausmeisterservice',
     button: 'Hausmeisterservice',
     description:
       'Sie suchen einen flexiblen und engagierten Hausmeister Ihres Vertrauens für Ihre Immobilie oder Ihr Unternehmen? Oder Sie brauchen nur für einen kleinen Auftrag oder für eine bestimmte kurze Zeit die Dienste eines Hausmeisters? Bei WWEHGER stehen wir mit unseren spezialisierten Hausmeisterdiensten zur Verfügung und freuen uns auf Ihre Anfrage!'
   },
   {
-    src: '../src/assets/img/services/service-five.jpg',
+    src: serviceFive,
     alt: 'Gartenarbeiten',
     button: 'Gartenarbeiten',
     description:
       'Sie haben ein kleines Projekt im Garten vor und benötigen jemanden, der Ihre Vision versteht und umsetzen kann, oder wollen zuverlässige Helfer für Rasenmähen, Hecke schneiden, Unkraut zupfen und Co.? Sie besitzen oder managen eine Immobilie oder ein Unternehmen und auch dort soll es in Ihrem Vorgarten gepflegt und ordentlich aussehen? Unser Team ist für Sie und Ihre Wünsche da! Vereinbaren Sie ein Beratungsgespräch oder erfragen Sie ein unverbindliches Angebot.'
   },
   {
-    src: '../src/assets/img/services/service-six.jpg',
+    src: serviceSix,
     alt: 'Winterdienst',
     button: 'Winterdienst',
     description:
       'Der zuverlässige Winterdienst für Sie als Privatperson im Vorgarten, für Ihr Büro/Gebäude, ganze Straßen oder sogar mehrere Bezirke und Routen - und das, wenn gewünscht, jederzeit im 24/7-Notfall-Winterdienst!'
   },
   {
-    src: '../src/assets/img/services/service-one.jpg',
+    src: serviceSeven,
     alt: 'Reinigungsarbeiten',
     button: 'Reinigungsarbeiten',
     description:

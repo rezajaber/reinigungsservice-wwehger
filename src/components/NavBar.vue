@@ -78,10 +78,10 @@ const scrollTo = (id: string) => {
 
               <div class="flex gap-2">
                 <Button @click="scrollTo('contact')" class="w-full rounded-xl"
-                  ><Mail class="mr-1.5 w-5" />Kontakt</Button
+                  ><Phone class="mr-1.5 w-5" />Kontakt</Button
                 >
                 <Button @click="scrollTo('contact')" class="w-full rounded-xl"
-                  ><Phone class="mr-1.5 w-5" />Mail</Button
+                  ><Mail class="mr-1.5 w-5" />Mail</Button
                 >
               </div>
             </div>

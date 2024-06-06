@@ -22,7 +22,7 @@ const scrollTo = (id: string) => {
       <div class="grid place-items-center md:place-items-start lg:w-1/2">
         <img
           class="h-56 rounded-xl object-cover sm:h-96 lg:h-full"
-          src="../assets/img/about-card-3.jpeg"
+          src="../assets/img/about-us.jpeg"
           alt=""
         />
       </div>
