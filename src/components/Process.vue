@@ -24,9 +24,10 @@ import { Stars } from 'lucide-vue-next'
           src="../assets/img/process/process-one.jpeg"
           alt=""
         />
-        <p class="text-2xl font-medium">Wählen Sie einen Service</p>
+        <p class="text-2xl font-medium">Servicewahl</p>
         <p class="w-60 text-center text-[#5E6F92]">
-          Wählen Sie aus unserer Liste von Dienstleistungen den passenden für Ihre Bedürfnisse aus.
+          Schauen Sie sich unsere Dienstleistungen an und wählen Sie aus unserer Liste von
+          Dienstleistungen den passenden für Ihre Bedürfnisse aus.
         </p>
       </div>
 
@@ -40,9 +41,10 @@ import { Stars } from 'lucide-vue-next'
           src="../assets/img/process/process-two.jpeg"
           alt=""
         />
-        <p class="text-2xl font-medium">Team kommt an</p>
+        <p class="text-2xl font-medium">Kontaktaufnahme</p>
         <p class="w-60 text-center text-[#5E6F92]">
-          Unser Team trifft pünktlich bei Ihnen ein und beginnt mit den vereinbarten Arbeiten.
+          Kontaktieren Sie uns und Sie erhalten nach einem Telefonat oder einer Besichtigung ein
+          individuelles Angebot, das auf Ihre Bedürfnisse zugeschnitten ist.
         </p>
       </div>
 
@@ -56,9 +58,10 @@ import { Stars } from 'lucide-vue-next'
           src="../assets/img/process/process-three.jpeg"
           alt=""
         />
-        <p class="text-2xl font-medium">Reinigungsprozess</p>
+        <p class="text-2xl font-medium">Angebotserstellung</p>
         <p class="w-60 text-center text-[#5E6F92]">
-          Wir führen die Reinigung nach höchsten Standards durch, um beste Ergebnisse zu erzielen.
+          Nach unserem ersten Kontakt erhalten Sie von uns ein detailliertes Angebot. Prüfen Sie es
+          in Ruhe und bei Fragen stehen wir Ihnen gerne zur Verfügung.
         </p>
       </div>
 
@@ -72,10 +75,10 @@ import { Stars } from 'lucide-vue-next'
           src="../assets/img/process/process-four.jpeg"
           alt=""
         />
-        <p class="text-2xl font-medium">Zufriedenheit</p>
+        <p class="text-2xl font-medium">Auftragsabwicklung</p>
         <p class="w-60 text-center text-[#5E6F92]">
-          Ihre Zufriedenheit ist unser oberstes Ziel. Wir stellen sicher, dass Sie mit unserer
-          Arbeit vollkommen zufrieden sind.
+          Nach Ihrer Annahme beginnen wir sofort mit der Abwicklung. Unser engagiertes Team sorgt
+          dafür, dass alles reibungslos verläuft.
         </p>
       </div>
     </div>
