@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import { Phone, Facebook, Instagram, Mail } from 'lucide-vue-next'
 
+import Credentials from './Credentials.vue'
+
 const currentYear = ref(new Date().getFullYear())
 
 const scrollTo = (id: string) => {
@@ -107,11 +109,9 @@ const scrollTo = (id: string) => {
                 class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
                 >Sektion</span
               >
-              <RouterLink to="/credentials">
-                <span class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
-                  >Impressum & Datenschutz</span
-                >
-              </RouterLink>
+              <span class="mt-2 block cursor-pointer text-sm text-sub hover:underline"
+                ><Credentials
+              /></span>
             </div>
 
             <div>
